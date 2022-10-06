@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AIGO成果展示</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<script src="https://cdn.bootcss.com/angular.js/1.7.0/angular.min.js"></script>
+<script src="https://cdn.bootcss.com/angular.js/1.7.0/angular-route.min.js"></script>
+<script src="./controller/main.js"></script>
+</head>
+<style>
+    body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+    
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/w3images/coffeehouse.jpg");
+      min-height: 75%;
+    }
+    
+    .menu {
+      display: none;
+    }
+</style>
+<body ng-app='AIGO'>
+    
+    <div class="w3-row w3-bar w3-black">
+        <div class="w3-col s4">
+            <a href="#!/" class="w3-button w3-button w3-block w3-black">
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp團隊介紹
+            </a>
+        </div>
+        <div class="w3-col s4">
+            <a href="#!/company" class="w3-button w3-button w3-block w3-black">
+                <i class="fa fa-university" aria-hidden="true"></i>&nbsp出題公司介紹
+            </a>
+        </div>
+        <div class="w3-col m4">
+            <a href="#!/demo" class="w3-button w3-button w3-block w3-black">
+                <i class="fa fa-codepen" aria-hidden="true"></i>&nbsp成果展示
+            </a>
+        </div>
+    </div>
+
+    <div ng-view></div>
+
+</body>
+</html>
