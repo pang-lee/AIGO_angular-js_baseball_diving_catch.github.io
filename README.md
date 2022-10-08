@@ -1,4 +1,4 @@
-# AIGO_baseball_diving_catch demo
+# AIGO_baseball_diving_catch_angular.js demo
 
 ## project detail
 
